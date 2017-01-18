@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by Kamil on 2016-12-29.
  */
-public interface AbstractGameFactory {
+public interface GameFactory {
     GameController createGame(Configuration configuration, Player player, List<Player> bots);
 
 }

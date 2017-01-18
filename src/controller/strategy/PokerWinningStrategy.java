@@ -51,7 +51,7 @@ public class PokerWinningStrategy implements WinningStrategy {
                 winners.clear();
                 winners.add(p);
                 bestHand = hand;
-            }else if ( hand.compareTo(bestHand) ==0) {
+            }else if ( hand.compareTo(bestHand) ==  0) {
                 winners.add(p);
             }
 

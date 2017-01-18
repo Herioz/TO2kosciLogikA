@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by Kamil on 2016-12-29.
  */
-public class ConcreteGameFactory implements AbstractGameFactory {
+public class ConcreteGameFactory implements GameFactory {
     private int ID = 1;
     @Override
     public GameController createGame(Configuration configuration, Player player, List<Player> bots) {
@@ -24,7 +24,7 @@ public class ConcreteGameFactory implements AbstractGameFactory {
 
         WinningStrategy ws = null;
 
-        // BOTY I INNE ZABAWKI XD MAJaczysz XD
+
         switch (configuration.getGameType()){
             case N_PLUS:
                 ws= new NWinningStrategy((a, b) -> a+b , 0);

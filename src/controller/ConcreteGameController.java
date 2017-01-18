@@ -76,12 +76,12 @@ public class ConcreteGameController implements GameController {
 
         if(p.getDice().isEmpty()){
             for ( int i=0; i < 5 ; i++) {
-                p.getDice().add(i,6-i );//ThreadLocalRandom.current().nextInt(1, 7));
+                p.getDice().add(ThreadLocalRandom.current().nextInt(1, 7));
                 //wrocic do randoma
             }
         }else{
             for (Integer i : move.getDice()) {
-                p.getDice().set(i-1,i);//ThreadLocalRandom.current().nextInt(1,7));
+                p.getDice().set(i-1,ThreadLocalRandom.current().nextInt(1,7));
                 //wrocic do randoma
             }
         }

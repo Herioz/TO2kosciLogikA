@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by Kamil on 2017-01-02.
  */
-public class PokerHand implements  Comparable<PokerHand>{
+public class  PokerHand implements  Comparable<PokerHand>{
     private PokerRank rank;
     private List<Integer> values;
 

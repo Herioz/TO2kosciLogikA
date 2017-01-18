@@ -15,7 +15,7 @@ public class Game {
         this.placesLeft = placesLeft;
         this.gameState = gameState;
     }
-     public void d(){}
+
     public Integer getGameID() {
         return gameID;
     }
